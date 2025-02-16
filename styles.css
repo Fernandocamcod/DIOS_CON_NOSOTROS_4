@@ -1,0 +1,101 @@
+/* Estilos para las secciones de Visión, Misión, Valores, Objetivos y Contacto */
+#vision, #mision, #valores, #objetivos, #contacto {
+    background: #f8f9fa; /* Fondo claro */
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin-bottom: 30px;
+}
+
+#vision h2, #mision h2, #valores h2, #objetivos h2, #contacto h2 {
+    font-size: 2.5rem;
+    color: #003366; /* Color del texto */
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#vision p, #mision ul, #valores ul, #objetivos ul, #contacto ul {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+#vision ul, #mision ul, #valores ul, #objetivos ul, #contacto ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#vision li, #mision li, #valores li, #objetivos li, #contacto li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+#vision li::before, #mision li::before, #valores li::before, #objetivos li::before, #contacto li::before {
+    content: "•";
+    color: #0066cc; /* Color del punto */
+    position: absolute;
+    left: 0;
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+/* Media Query para Responsividad en Pantallas más Pequeñas */
+@media (max-width: 768px) {
+    #vision h2, #mision h2, #valores h2, #objetivos h2, #contacto h2 {
+        font-size: 2rem;
+    }
+
+    #vision p, #mision ul, #valores ul, #objetivos ul, #contacto ul {
+        font-size: 1rem;
+    }
+}
+
+/* Estilos para centrar el texto del título en la barra de navegación */
+.navbar-brand {
+    text-align: center;
+    width: 100%;
+    font-size: 2rem; /* Aumenta el tamaño de la letra */
+    font-weight: bold;
+}
+
+.navbar .container-fluid {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para reducir el tamaño de la imagen */
+.imagen-reducida {
+    max-width: 50%; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+}
+
+/* Estilos para la galería */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Efecto de zoom en las imágenes de la galería */
+.gallery-grid img {
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.1);
+}
+
+/* Efecto de zoom en la imagen 15 y otras imágenes */
+.imagen-zoom {
+    transition: transform 0.3s ease;
+}
+
+.imagen-zoom:hover {
+    transform: scale(1.1);
+}
+
+/* Fondo degradado celeste para la página web */
+body {
+    background: linear-gradient(to bottom, #a1c4fd, #c2e9fb); /* Degradado de celeste */
+}
